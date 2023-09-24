@@ -22,6 +22,8 @@
 		1C3929432ABF73F900D6E11A /* WatchOSCompliment_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3929422ABF73F900D6E11A /* WatchOSCompliment_Watch_AppUITests.swift */; };
 		1C3929452ABF73F900D6E11A /* WatchOSCompliment_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3929442ABF73F900D6E11A /* WatchOSCompliment_Watch_AppUITestsLaunchTests.swift */; };
 		1C3929482ABF73F900D6E11A /* WatchOSCompliment Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1C3929252ABF73F700D6E11A /* WatchOSCompliment Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1C3929572AC069A000D6E11A /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3929562AC069A000D6E11A /* Question.swift */; };
+		1C3929592AC06BF900D6E11A /* ChoiceTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3929582AC06BF900D6E11A /* ChoiceTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +100,8 @@
 		1C3929422ABF73F900D6E11A /* WatchOSCompliment_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchOSCompliment_Watch_AppUITests.swift; sourceTree = "<group>"; };
 		1C3929442ABF73F900D6E11A /* WatchOSCompliment_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchOSCompliment_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1C3929532AC0278600D6E11A /* Notes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
+		1C3929562AC069A000D6E11A /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		1C3929582AC06BF900D6E11A /* ChoiceTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +184,8 @@
 				1C3928F92ABF6B1F00D6E11A /* ContentView.swift */,
 				1C3928FB2ABF6B2000D6E11A /* Assets.xcassets */,
 				1C3928FD2ABF6B2000D6E11A /* Preview Content */,
+				1C3929562AC069A000D6E11A /* Question.swift */,
+				1C3929582AC06BF900D6E11A /* ChoiceTextView.swift */,
 			);
 			path = "Code History";
 			sourceTree = "<group>";
@@ -467,7 +473,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C3929572AC069A000D6E11A /* Question.swift in Sources */,
 				1C3928FA2ABF6B1F00D6E11A /* ContentView.swift in Sources */,
+				1C3929592AC06BF900D6E11A /* ChoiceTextView.swift in Sources */,
 				1C3928F82ABF6B1F00D6E11A /* Code_HistoryApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
