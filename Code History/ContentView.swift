@@ -5,72 +5,58 @@
 //  Created by Reuben Kouidri on 23/09/2023.
 //
 
+/*
+ - sunshine or shade
+ - question around exposure and how hardy it is: are you risk averse or adrenaline seeker or like a challenge?
+ - Have you ever, or do you currently play a team sport?
+ - How many Sundays do you spend in bed per month : 0, 1-2, 3, 4?
+ - Do you prefer a steamroom or sauna?
+ - Hot or cold climate?
+ - Are you afraid of heights?
+ -
+ */
+
 import SwiftUI
 
 struct ContentView: View {
+    // define new constants
+    @State var mainColor = Color(red: 20/255, green: 28/255, blue: 58/255)
+    
+    let question = Question(
+        questionText: "What was the first computer bug?",
+        possibleAnswers: ["Ant", "Beetle", "Moth", "Bee"],
+        correctAnswerIndex: 2
+    )
+    
     var body: some View {
-        VStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 10) {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-                .font(Font.custom("Helvetica", size: 12))
-                .bold()
-                .padding(12)
-                .border(Color.white, width: 2.0)
-        }
-            
-        // VStack example
-        VStack(alignment: .center, spacing: 10) {
-            Text("I'm having a great time at...")
-                .font(Font.custom("Helvetica", size: 12))  // takes precedent
-            Text("Codecademy!")
-                .foregroundColor(Color.blue)
-                .bold()
-        } 
-            .font(Font.custom("Arial", size: 12))  // this applies to all child Views in VStack (respecting precedence)
-        
-        HStack(alignment: .top, spacing: 5, content: {
-            Text("This is a HStack")
-                .frame(width: 95, height: 100, alignment: .center)
-                .defaultHoverEffect(.highlight)
-                .padding(EdgeInsets(top: 5, leading: 15, bottom: 5, trailing: 15))
-                .background(Color.blue)
-            Text("Second View")
-                .frame(width: 95, height: 100, alignment: .center)
-                .padding(EdgeInsets(top: 5, leading: 15, bottom: 5, trailing: 15))
-                .background(Color.orange)
-            Text("Third View")
-                .frame(width: 95, height: 100, alignment: .center)
-                .padding(EdgeInsets(top: 5, leading: 15, bottom: 5, trailing: 15))
-                .background(Color.red)
-        }) .border(Color.white)
-        
-        ZStack(alignment: Alignment(horizontal: .center, vertical: .center)) {
-            VStack {}
-                .frame(width: 100, height: 100)
-                .background(Color.blue)
-            VStack {}
-                .frame(width: 50, height: 50)
-                .background(Color.yellow)
-        }
-            .font(.title)
-            .foregroundColor(.green)
-            .border(Color.black)
-        
-        VStack {
-            Text("Welcome to Code History!")
-                .font(.subheadline)
-                .padding()
-            Button(action: {
-                print("Clicked")
-            }, label: {
-                Text("Click me")})
-            .padding()
-            .background(Color.blue)
+            ZStack {
+                mainColor.ignoresSafeArea()
+                VStack {
+                    Text("1 / 10")
+                        .font(.callout)
+                        .multilineTextAlignment(.leading)
+                        .padding()
+                    Text(question.questionText)
+                        .font(.largeTitle)
+                        .bold()
+                        .multilineTextAlignment(.leading)  // If spread over multiple lines, align left side
+                    Spacer()
+                    
+                    HStack {
+                        // the id \.self uses each possibleAnswer as it's own ID - can't have duplicates!
+                        ForEach(question.possibleAnswers.indices, id: \.self) { index in
+                            Button(action: {
+                                print(question.possibleAnswers[index])
+                                mainColor = index == question.correctAnswerIndex ? .green : .red
+                            }, label: {
+                                ChoiceTextView(choiceText: question.possibleAnswers[index])
+                            })
+                        }
+                    }
+                }
+            }
             .foregroundColor(.white)
         }
-    }
 }
 
 #Preview {
