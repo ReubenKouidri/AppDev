@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  GameView.swift
 //  WatchOSCompliment Watch App
 //
 //  Created by Hamid Kouidri on 23/09/2023.
