@@ -18,9 +18,9 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct GameView: View {
     // define new constants
-    @State var mainColor = Color(red: 20/255, green: 28/255, blue: 58/255)
+    @State var mainColor = GameColour.main
     
     let question = Question(
         questionText: "What was the first computer bug?",
@@ -33,11 +33,11 @@ struct ContentView: View {
                 mainColor.ignoresSafeArea()
                 VStack {
                     Text("1 / 10")
-                        .font(.callout)
+                        .font(GameFont.smallFont)
                         .multilineTextAlignment(.leading)
                         .padding()
                     Text(question.questionText)
-                        .font(.largeTitle)
+                        .font(GameFont.questionFont)
                         .bold()
                         .multilineTextAlignment(.leading)  // If spread over multiple lines, align left side
                     Spacer()
@@ -60,5 +60,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    GameView()
 }
