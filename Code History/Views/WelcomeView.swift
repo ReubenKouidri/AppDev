@@ -12,7 +12,7 @@ struct WelcomeView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                GameColour.main.ignoresSafeArea()
+                GameColor.main.ignoresSafeArea()
                 VStack {
                     VStack(alignment: .center, spacing: 0) {
                         Text("Select the answers to the following questions")
@@ -33,8 +33,6 @@ struct WelcomeView: View {
                         label: {BottomTextView(str:"Let's goooooo!")})
                 }
                     .foregroundColor(.white)
-                
-                
             }
         }
     }

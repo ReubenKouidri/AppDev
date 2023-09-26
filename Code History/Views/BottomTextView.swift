@@ -19,7 +19,7 @@ struct BottomTextView: View {
                 .padding()
             
             Spacer()
-        }.background(GameColour.accent)
+        }.background(GameColor.accent)
     }
 }
 

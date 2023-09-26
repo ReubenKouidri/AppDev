@@ -19,43 +19,27 @@
 import SwiftUI
 
 struct GameView: View {
-    // define new constants
-    @State var mainColor = GameColour.main
-    
-    let question = Question(
-        questionText: "What was the first computer bug?",
-        possibleAnswers: ["Ant", "Beetle", "Moth", "Bee"],
-        correctAnswerIndex: 2
-    )
+    @StateObject var viewModel = GameViewModel()
     
     var body: some View {
-            ZStack {
-                mainColor.ignoresSafeArea()
-                VStack {
-                    Text("1 / 10")
-                        .font(GameFont.smallFont)
-                        .multilineTextAlignment(.leading)
-                        .padding()
-                    Text(question.questionText)
-                        .font(GameFont.questionFont)
-                        .bold()
-                        .multilineTextAlignment(.leading)  // If spread over multiple lines, align left side
-                    Spacer()
-                    
-                    HStack {
-                        // the id \.self uses each possibleAnswer as it's own ID - can't have duplicates!
-                        ForEach(question.possibleAnswers.indices, id: \.self) { index in
-                            Button(action: {
-                                print(question.possibleAnswers[index])
-                                mainColor = index == question.correctAnswerIndex ? .green : .red
-                            }, label: {
-                                ChoiceTextView(choiceText: question.possibleAnswers[index])
-                            })
-                        }
-                    }
-                }
+        ZStack {
+            GameColor.main.ignoresSafeArea()
+            VStack {
+                Text(viewModel.questionProgressText)
+                    .font(GameFont.smallFont)
+                    .multilineTextAlignment(.leading)
+                    .padding()
+                QuestionView(question: viewModel.currentQuestion)
             }
+        }
+        .background(NavigationLink(
+            destination: ScoreView(viewModel: ScoreViewModel(correctGuesses: viewModel.correctGuesses, incorrectGuesses: viewModel.incorrectGuesses)),
+            isActive: .constant(viewModel.gameIsOver),
+            label: { EmptyView() } )
+        )
             .foregroundColor(.white)
+            .navigationBarHidden(true)  // user can't see the 'Back' button which will take them to the home screen and lose progress
+            .environmentObject(viewModel) // new line
         }
 }
 

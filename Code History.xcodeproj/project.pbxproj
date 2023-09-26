@@ -7,13 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C159D722AC22CD00075EF56 /* ScoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C159D712AC22CD00075EF56 /* ScoreViewModel.swift */; };
+		1C37A24E2AC22891008BC3C6 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C37A24D2AC22891008BC3C6 /* ScoreView.swift */; };
 		1C3928F82ABF6B1F00D6E11A /* Code_HistoryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3928F72ABF6B1F00D6E11A /* Code_HistoryApp.swift */; };
 		1C3928FA2ABF6B1F00D6E11A /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3928F92ABF6B1F00D6E11A /* GameView.swift */; };
 		1C3928FC2ABF6B2000D6E11A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C3928FB2ABF6B2000D6E11A /* Assets.xcassets */; };
 		1C3928FF2ABF6B2000D6E11A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C3928FE2ABF6B2000D6E11A /* Preview Assets.xcassets */; };
-		1C3929092ABF6B2000D6E11A /* Code_HistoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3929082ABF6B2000D6E11A /* Code_HistoryTests.swift */; };
-		1C3929132ABF6B2000D6E11A /* Code_HistoryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3929122ABF6B2000D6E11A /* Code_HistoryUITests.swift */; };
-		1C3929152ABF6B2000D6E11A /* Code_HistoryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3929142ABF6B2000D6E11A /* Code_HistoryUITestsLaunchTests.swift */; };
 		1C3929282ABF73F700D6E11A /* WatchOSComplimentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3929272ABF73F700D6E11A /* WatchOSComplimentApp.swift */; };
 		1C39292A2ABF73F700D6E11A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3929292ABF73F700D6E11A /* ContentView.swift */; };
 		1C39292C2ABF73F800D6E11A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C39292B2ABF73F800D6E11A /* Assets.xcassets */; };
@@ -28,9 +27,9 @@
 		1C3929632AC0DEFC00D6E11A /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3929622AC0DEFC00D6E11A /* WelcomeView.swift */; };
 		1C3929642AC0DEFC00D6E11A /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3929622AC0DEFC00D6E11A /* WelcomeView.swift */; };
 		1C3929652AC0DEFC00D6E11A /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3929622AC0DEFC00D6E11A /* WelcomeView.swift */; };
-		1C3929672AC1901900D6E11A /* GameColour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3929662AC1901900D6E11A /* GameColour.swift */; };
-		1C3929682AC1901900D6E11A /* GameColour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3929662AC1901900D6E11A /* GameColour.swift */; };
-		1C3929692AC1901900D6E11A /* GameColour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3929662AC1901900D6E11A /* GameColour.swift */; };
+		1C3929672AC1901900D6E11A /* GameColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3929662AC1901900D6E11A /* GameColor.swift */; };
+		1C3929682AC1901900D6E11A /* GameColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3929662AC1901900D6E11A /* GameColor.swift */; };
+		1C3929692AC1901900D6E11A /* GameColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3929662AC1901900D6E11A /* GameColor.swift */; };
 		1C39296B2AC1925D00D6E11A /* BottomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C39296A2AC1925D00D6E11A /* BottomTextView.swift */; };
 		1C39296C2AC1925D00D6E11A /* BottomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C39296A2AC1925D00D6E11A /* BottomTextView.swift */; };
 		1C39296D2AC1925D00D6E11A /* BottomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C39296A2AC1925D00D6E11A /* BottomTextView.swift */; };
@@ -40,6 +39,9 @@
 		1C3929742AC1BB8F00D6E11A /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3929732AC1BB8F00D6E11A /* GameViewModel.swift */; };
 		1C3929752AC1BB8F00D6E11A /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3929732AC1BB8F00D6E11A /* GameViewModel.swift */; };
 		1C3929762AC1BB8F00D6E11A /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3929732AC1BB8F00D6E11A /* GameViewModel.swift */; };
+		1C3929782AC1C01C00D6E11A /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3929772AC1C01C00D6E11A /* QuestionView.swift */; };
+		1C3929792AC1C01C00D6E11A /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3929772AC1C01C00D6E11A /* QuestionView.swift */; };
+		1C39297A2AC1C01C00D6E11A /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3929772AC1C01C00D6E11A /* QuestionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,16 +97,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1C159D712AC22CD00075EF56 /* ScoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewModel.swift; sourceTree = "<group>"; };
+		1C37A24D2AC22891008BC3C6 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
 		1C3928F42ABF6B1F00D6E11A /* Code History.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Code History.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C3928F72ABF6B1F00D6E11A /* Code_HistoryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Code_HistoryApp.swift; sourceTree = "<group>"; };
 		1C3928F92ABF6B1F00D6E11A /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		1C3928FB2ABF6B2000D6E11A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C3928FE2ABF6B2000D6E11A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1C3929042ABF6B2000D6E11A /* Code HistoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Code HistoryTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C3929082ABF6B2000D6E11A /* Code_HistoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Code_HistoryTests.swift; sourceTree = "<group>"; };
 		1C39290E2ABF6B2000D6E11A /* Code HistoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Code HistoryUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C3929122ABF6B2000D6E11A /* Code_HistoryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Code_HistoryUITests.swift; sourceTree = "<group>"; };
-		1C3929142ABF6B2000D6E11A /* Code_HistoryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Code_HistoryUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1C3929252ABF73F700D6E11A /* WatchOSCompliment Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchOSCompliment Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C3929272ABF73F700D6E11A /* WatchOSComplimentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchOSComplimentApp.swift; sourceTree = "<group>"; };
 		1C3929292ABF73F700D6E11A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -120,10 +121,11 @@
 		1C3929582AC06BF900D6E11A /* ChoiceTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceTextView.swift; sourceTree = "<group>"; };
 		1C39295A2AC0B4E600D6E11A /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		1C3929622AC0DEFC00D6E11A /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
-		1C3929662AC1901900D6E11A /* GameColour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameColour.swift; sourceTree = "<group>"; };
+		1C3929662AC1901900D6E11A /* GameColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameColor.swift; sourceTree = "<group>"; };
 		1C39296A2AC1925D00D6E11A /* BottomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTextView.swift; sourceTree = "<group>"; };
 		1C39296E2AC193F000D6E11A /* GameFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameFont.swift; sourceTree = "<group>"; };
 		1C3929732AC1BB8F00D6E11A /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		1C3929772AC1C01C00D6E11A /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,8 +178,6 @@
 			isa = PBXGroup;
 			children = (
 				1C3928F62ABF6B1F00D6E11A /* Code History */,
-				1C3929072ABF6B2000D6E11A /* Code HistoryTests */,
-				1C3929112ABF6B2000D6E11A /* Code HistoryUITests */,
 				1C3929262ABF73F700D6E11A /* WatchOSCompliment Watch App */,
 				1C3929372ABF73F900D6E11A /* WatchOSCompliment Watch AppTests */,
 				1C3929412ABF73F900D6E11A /* WatchOSCompliment Watch AppUITests */,
@@ -201,11 +201,11 @@
 		1C3928F62ABF6B1F00D6E11A /* Code History */ = {
 			isa = PBXGroup;
 			children = (
+				1C3928F72ABF6B1F00D6E11A /* Code_HistoryApp.swift */,
+				1C3929532AC0278600D6E11A /* Notes.swift */,
 				1C3929722AC1BB7400D6E11A /* ViewModels */,
 				1C39295D2AC0B55B00D6E11A /* Views */,
 				1C39295C2AC0B54800D6E11A /* Models */,
-				1C3928F72ABF6B1F00D6E11A /* Code_HistoryApp.swift */,
-				1C3929532AC0278600D6E11A /* Notes.swift */,
 				1C3928FB2ABF6B2000D6E11A /* Assets.xcassets */,
 				1C3928FD2ABF6B2000D6E11A /* Preview Content */,
 			);
@@ -218,23 +218,6 @@
 				1C3928FE2ABF6B2000D6E11A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		1C3929072ABF6B2000D6E11A /* Code HistoryTests */ = {
-			isa = PBXGroup;
-			children = (
-				1C3929082ABF6B2000D6E11A /* Code_HistoryTests.swift */,
-			);
-			path = "Code HistoryTests";
-			sourceTree = "<group>";
-		};
-		1C3929112ABF6B2000D6E11A /* Code HistoryUITests */ = {
-			isa = PBXGroup;
-			children = (
-				1C3929122ABF6B2000D6E11A /* Code_HistoryUITests.swift */,
-				1C3929142ABF6B2000D6E11A /* Code_HistoryUITestsLaunchTests.swift */,
-			);
-			path = "Code HistoryUITests";
 			sourceTree = "<group>";
 		};
 		1C3929262ABF73F700D6E11A /* WatchOSCompliment Watch App */ = {
@@ -286,11 +269,13 @@
 			isa = PBXGroup;
 			children = (
 				1C39296A2AC1925D00D6E11A /* BottomTextView.swift */,
-				1C3929662AC1901900D6E11A /* GameColour.swift */,
+				1C3929662AC1901900D6E11A /* GameColor.swift */,
 				1C3928F92ABF6B1F00D6E11A /* GameView.swift */,
 				1C3929582AC06BF900D6E11A /* ChoiceTextView.swift */,
 				1C3929622AC0DEFC00D6E11A /* WelcomeView.swift */,
 				1C39296E2AC193F000D6E11A /* GameFont.swift */,
+				1C3929772AC1C01C00D6E11A /* QuestionView.swift */,
+				1C37A24D2AC22891008BC3C6 /* ScoreView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -299,6 +284,7 @@
 			isa = PBXGroup;
 			children = (
 				1C3929732AC1BB8F00D6E11A /* GameViewModel.swift */,
+				1C159D712AC22CD00075EF56 /* ScoreViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -526,15 +512,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C3929572AC069A000D6E11A /* Question.swift in Sources */,
+				1C159D722AC22CD00075EF56 /* ScoreViewModel.swift in Sources */,
 				1C3929632AC0DEFC00D6E11A /* WelcomeView.swift in Sources */,
 				1C39296F2AC193F000D6E11A /* GameFont.swift in Sources */,
 				1C39295B2AC0B4E600D6E11A /* Game.swift in Sources */,
 				1C3928FA2ABF6B1F00D6E11A /* GameView.swift in Sources */,
+				1C37A24E2AC22891008BC3C6 /* ScoreView.swift in Sources */,
 				1C39296B2AC1925D00D6E11A /* BottomTextView.swift in Sources */,
 				1C3929592AC06BF900D6E11A /* ChoiceTextView.swift in Sources */,
+				1C3929782AC1C01C00D6E11A /* QuestionView.swift in Sources */,
 				1C3928F82ABF6B1F00D6E11A /* Code_HistoryApp.swift in Sources */,
 				1C3929742AC1BB8F00D6E11A /* GameViewModel.swift in Sources */,
-				1C3929672AC1901900D6E11A /* GameColour.swift in Sources */,
+				1C3929672AC1901900D6E11A /* GameColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,9 +533,9 @@
 			files = (
 				1C3929752AC1BB8F00D6E11A /* GameViewModel.swift in Sources */,
 				1C39296C2AC1925D00D6E11A /* BottomTextView.swift in Sources */,
-				1C3929682AC1901900D6E11A /* GameColour.swift in Sources */,
+				1C3929682AC1901900D6E11A /* GameColor.swift in Sources */,
+				1C3929792AC1C01C00D6E11A /* QuestionView.swift in Sources */,
 				1C3929702AC193F000D6E11A /* GameFont.swift in Sources */,
-				1C3929092ABF6B2000D6E11A /* Code_HistoryTests.swift in Sources */,
 				1C3929642AC0DEFC00D6E11A /* WelcomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -555,11 +544,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C3929152ABF6B2000D6E11A /* Code_HistoryUITestsLaunchTests.swift in Sources */,
-				1C3929692AC1901900D6E11A /* GameColour.swift in Sources */,
+				1C39297A2AC1C01C00D6E11A /* QuestionView.swift in Sources */,
+				1C3929692AC1901900D6E11A /* GameColor.swift in Sources */,
 				1C3929712AC193F000D6E11A /* GameFont.swift in Sources */,
 				1C3929652AC0DEFC00D6E11A /* WelcomeView.swift in Sources */,
-				1C3929132ABF6B2000D6E11A /* Code_HistoryUITests.swift in Sources */,
 				1C39296D2AC1925D00D6E11A /* BottomTextView.swift in Sources */,
 				1C3929762AC1BB8F00D6E11A /* GameViewModel.swift in Sources */,
 			);

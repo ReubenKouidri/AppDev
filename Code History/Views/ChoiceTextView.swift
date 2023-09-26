@@ -15,7 +15,7 @@ struct ChoiceTextView: View {
             .font(GameFont.buttonFont)
             .padding()
             .bold()
-            .border(GameColour.accent, width: 4)
+            .border(GameColor.accent, width: 4)
             .multilineTextAlignment(.center)
     }
 }
